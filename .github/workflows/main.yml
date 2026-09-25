@@ -5,7 +5,7 @@ on:
     paths-ignore:
       - "docs/**"
     branches:
-      - 20260902-2104Z-commit-e7b651f-liberty
+      - edburns/dd-3016202-cargotracker-devoxx-be-2026-01
   pull_request:
     types:
       - opened
@@ -16,6 +16,9 @@ on:
 jobs:
   formatting:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: demo
     steps:
       - uses: actions/checkout@v7
         with:
@@ -37,6 +40,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     needs: [formatting]
+    defaults:
+      run:
+        working-directory: demo
     steps:
       - uses: actions/checkout@v7
         with:
