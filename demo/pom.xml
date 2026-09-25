@@ -169,7 +169,7 @@
 				<artifactId>spotless-maven-plugin</artifactId>
 				<version>2.43.0</version>
 				<configuration>
-					<ratchetFrom>e7b651fb3ed8bc17c338face1c7ff960618fcd95</ratchetFrom>
+					<ratchetFrom>1fd1c340fa56c6c77a601d2fbba20294afa46dd9</ratchetFrom>
 					<java>
 						<googleJavaFormat>
 							<version>1.18.1</version>
